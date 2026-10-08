@@ -1,4 +1,12 @@
-.vercel
+# Local credentials and deployment state
 .env*
+.vercel/
+
+# Dependencies and local caches
+node_modules/
+__pycache__/
+*.py[cod]
+
+# OS files and development logs
 .DS_Store
-node_modules
+*.log

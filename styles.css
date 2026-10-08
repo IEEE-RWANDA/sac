@@ -13,3 +13,21 @@ dialog{border:1px solid var(--line);border-radius:3px;padding:40px;width:min(560
 @media(max-width:760px){.page-heading h1{font-size:32px}.branch-profile{grid-template-columns:1fr;gap:0}.branch-profile>img{height:230px}.branch-profile>div{padding:24px}.page-heading{padding:27px 5% 35px}.site-header nav.open{font-size:14px;gap:23px}}
 
 .branch-profile-text{display:block}.branch-profile-text>div{padding:30px}
+
+.branch-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:27px}.branch-card{background:#fff;display:flex;flex-direction:column}.branch-card>img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.branch-card>div{padding:25px;display:flex;flex-direction:column;flex:1}.branch-card .text-link{margin-top:auto;align-self:flex-start}.branch-card h3{font-size:19px;margin-bottom:10px}.branch-card p{font-size:12px;min-height:44px;margin-bottom:18px}.branch-profile#ur>img{object-fit:contain;background:var(--pale)}
+@media(max-width:760px){.branch-grid{grid-template-columns:1fr;gap:28px}.branch-card p{min-height:0}.branch-card>img{aspect-ratio:4/3}}
+
+.announcement-grid article{border-top:3px solid var(--blue);display:flex}.announcement-grid .news-body{display:flex;flex-direction:column;width:100%}.announcement-grid time{display:block;font-size:11px;color:var(--muted);margin-top:12px}.announcement-grid h3{margin-top:18px}.announcement-grid .text-link{margin-top:auto;align-self:flex-start}.archive-more{margin-top:35px}
+
+.announcement-grid article{flex-direction:column;border-top:0}.announcement-grid .news-image{height:auto;aspect-ratio:16/10;flex-shrink:0;background:#fff}.announcement-grid .news-image img{object-fit:contain}.announcement-grid .news-body{flex:1}
+
+
+.branch-funding{margin-top:40px;padding-top:35px;border-top:1px solid var(--line)}.branch-funding h3{font-size:24px;margin-top:12px}.branch-funding .programme-links{align-self:start}
+
+.brand .sac-logo{display:block;width:120px;height:120px;object-fit:contain;background:transparent}footer .brand .sac-logo{width:160px;height:160px}.site-header{padding-top:14px;padding-bottom:14px}@media(max-width:760px){.brand .sac-logo{width:100px;height:100px}}
+
+.brand-assets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.brand-art{height:240px;display:flex;align-items:center;justify-content:center;background:#f4f7f9;padding:28px}.brand-art img{display:block;max-width:100%;max-height:100%}.brand-art-dark{background:#002747}.brand-assets h3{margin:22px 0 14px;font-size:19px}.brand-banner{display:block;width:100%;height:auto;margin:24px 0}.brand-assets+.page-actions{margin-top:24px}@media(max-width:760px){.brand-assets{grid-template-columns:1fr}.brand-art{height:220px}}
+
+.site-header{padding-top:10px;padding-bottom:10px}.site-header .sac-logo{width:auto;height:50px}.site-header .brand{flex-shrink:0}@media(max-width:760px){.site-header{padding-top:8px;padding-bottom:8px}.site-header .sac-logo{width:auto;height:44px}}
+
+.site-header{position:sticky;top:0;z-index:100}html{scroll-padding-top:90px}@media(min-width:761px) and (max-width:1150px){html{scroll-padding-top:135px}}@media(max-width:760px){html{scroll-padding-top:80px}.site-header nav.open{max-height:calc(100dvh - 60px);overflow-y:auto}}
