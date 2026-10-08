@@ -1,12 +1,21 @@
 # IEEE SAC Rwanda
 
-Static local prototype adapted from the IEEE Region 8 SAC site structure. Run `npm run dev` and open http://127.0.0.1:4187. JavaScript syntax: `npm run check`.
+Next.js App Router website with React and Tailwind CSS. Existing custom styles preserve the approved visual design; Tailwind utilities handle shared content grids and layouts.
 
-Includes manual hero carousel, mission, regional announcements, student branch directory, awards, official branch resources, funding programme links, committee/contact placeholders, and a browser-local activity planner.
+## Development
 
-Before publication: confirm Rwanda mission, committee, branch directory, contacts and events; review IEEE branding. No authentication or shared submissions are implemented.
+Requires Node.js 20.9+ and npm.
 
-Reference: https://r8.ieee.org/sac/ and its Resources, Recognition and Support pages, read through the signed-in Codex browser. Regional links are labelled as regional. Campus photographs are from IEEE Rwanda; announcement artwork accompanies the referenced Region 8 programmes. Montserrat is locally hosted from the reference site's observed font asset.
+```sh
+npm ci
+npm run dev
+```
+
+Open http://127.0.0.1:4187. Run `npm run build` for the production build and `npm start` to serve it. `npm run check` checks the browser interaction script.
+
+Pages live in `app/`; reusable header, footer, dialogs, and announcements are in `components/`. Public files live in `public/`. Old `.html` URLs redirect to the matching Next.js route. Navigation uses full page loads so the existing browser-local planner, dialogs, and carousel initialize on each page.
+
+Before publication, confirm the mission, committee, contacts, and events. There is no authentication or shared submission backend. Activity drafts stay in the visitor's browser.
 
 ## Rwanda photography
 
@@ -21,14 +30,14 @@ Additional branch photos: CMU-Africa — https://www.flickr.com/photos/ieeerwand
 
 ## Announcements
 
-Edit `data/announcements.json` and run `npm run build`. The generator sorts by publication date, renders the latest three on the homepage, and renders the full list on `opportunities.html`. Content is a curated snapshot of the Region 8 announcements page, checked on 8 October 2026; it is not a live feed.
+Edit `data/announcements.json` and run `npm run build`. The shared React component sorts by publication date, renders the latest three on the homepage, and renders the full list on `/opportunities`. Content is a curated snapshot of the Region 8 announcements page, checked on 8 October 2026; it is not a live feed.
 
-Official IEEE vector masterbrand sourced from the rendered IEEE.org homepage on 8 October 2026 through the in-app browser. Original saved as `assets/brand/ieee-official.svg`; embedded in the SAC logo variants.
+Official IEEE vector masterbrand sourced from the rendered IEEE.org homepage on 8 October 2026 through the in-app browser. Original saved as `public/assets/brand/ieee-official.svg`; embedded in the SAC logo variants.
 
 ## Brand assets
 
-`brand.html` is the public download page. Keep the approved SVG variants, original supplied PNG, official IEEE source artwork, social media exports, and favicon sizes in `assets/brand/`. The navbar uses `sac-rwanda-header.svg`; the footer uses `sac-rwanda-square-dark.svg`.
+`/brand` is the public download page. Keep the approved SVG variants, original supplied PNG, official IEEE source artwork, social media exports, and favicon sizes in `public/assets/brand/`. The navbar uses `sac-rwanda-header.svg`; the footer uses `sac-rwanda-square-dark.svg`.
 
 ## Repository hygiene
 
-Local `.env*` files, `.vercel/` state, dependencies, caches, and logs are ignored. Keep site pages, assets, announcement data and its build script, and the deployment workflow in Git. Retired logo concepts and the internal preview page have been removed.
+Local `.env*` files, `.vercel/` state, dependencies, caches, and logs are ignored. Keep site pages, assets, announcement data and Next.js/Tailwind configuration, and the deployment workflow in Git. Retired logo concepts and the internal preview page have been removed.

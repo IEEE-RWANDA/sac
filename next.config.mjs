@@ -1,0 +1,1 @@
+export default { async redirects(){return [{source:"/index.html",destination:"/",permanent:true},...["student-branches", "leadership", "opportunities", "recognition", "brand"].map(page=>({source:`/${page}.html`,destination:`/${page}`,permanent:true}))];} };

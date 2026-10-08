@@ -3,8 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "python3 -m http.server 4187 --bind 127.0.0.1",
-    "check": "node --check app.js",
-    "build": "python3 scripts/build-announcements.py"
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 4187",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 4187",
+    "check": "node --check public/site.js"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "postcss": "^8.5.28",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^3.4.19"
   }
 }

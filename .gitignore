@@ -10,3 +10,7 @@ __pycache__/
 # OS files and development logs
 .DS_Store
 *.log
+
+# Next.js output
+.next/
+out/
