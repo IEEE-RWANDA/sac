@@ -34,3 +34,12 @@ dialog{border:1px solid var(--line);border-radius:3px;padding:40px;width:min(560
 .site-header{padding-top:10px;padding-bottom:10px}.site-header .sac-logo{width:auto;height:50px}.site-header .brand{flex-shrink:0}@media(max-width:760px){.site-header{padding-top:8px;padding-bottom:8px}.site-header .sac-logo{width:auto;height:44px}}
 
 .site-header{position:sticky;top:0;z-index:100}html{scroll-padding-top:90px}@media(min-width:761px) and (max-width:1150px){html{scroll-padding-top:135px}}@media(max-width:760px){html{scroll-padding-top:80px}.site-header nav.open{max-height:calc(100dvh - 60px);overflow-y:auto}}
+
+.campus-card{border:1px solid var(--line)}
+.campus-card-label{font-size:10px;font-weight:600;letter-spacing:1.3px;color:var(--blue);margin-bottom:10px}
+.campus-card h3{font-size:23px;line-height:1.25;letter-spacing:-.4px;margin:0 0 10px}
+.campus-card .campus-card-university{font-size:12px;line-height:1.65;min-height:40px;margin:0 0 24px}
+.campus-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:1px solid var(--line);padding-top:17px;align-items:start}.campus-card-link{display:block;font-size:12px;line-height:1.6;font-weight:600;color:var(--blue)}.campus-card-unavailable{font-size:12px;line-height:1.6;font-weight:600;color:var(--muted)}.campus-card-unavailable small{display:block;font-size:10px;font-weight:400;margin-top:3px}
+.campus-card-link:hover{text-decoration:underline;text-underline-offset:4px}
+
+.footer-ieee{align-items:flex-end;text-align:right}.footer-ieee-logo{display:block;margin-top:10px}.footer-ieee-logo img{display:block;width:160px;height:auto}@media(max-width:760px){.footer-ieee{align-items:flex-start;text-align:left}.footer-ieee-logo img{width:140px}}

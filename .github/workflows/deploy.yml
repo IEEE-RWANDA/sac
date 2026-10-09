@@ -33,7 +33,8 @@ jobs:
       - name: Deploy
         id: deploy
         run: |
-          echo "url=$(vercel deploy $PROD_FLAG --yes --token=$VERCEL_TOKEN)" >> "$GITHUB_OUTPUT"
+          url=$(vercel deploy $PROD_FLAG --yes --token=$VERCEL_TOKEN)
+          echo "url=$url" >> "$GITHUB_OUTPUT"
 
       - name: Summary
         run: |
