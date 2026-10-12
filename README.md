@@ -41,3 +41,11 @@ Official IEEE vector masterbrand sourced from the rendered IEEE.org homepage on 
 ## Repository hygiene
 
 Local `.env*` files, `.vercel/` state, dependencies, caches, and logs are ignored. Keep site pages, assets, announcement data and Next.js/Tailwind configuration, and the deployment workflow in Git. Retired logo concepts and the internal preview page have been removed.
+
+Leadership portraits: Kipngeno Koech from https://kipngenokoech.com/ and Gentille Uwera from https://gentilleuwera.com/, retrieved through the in-app browser at the user’s request. Files are stored in `public/assets/leadership/`.
+
+Stephen Mbarushimana’s leadership portrait is sourced from his [LinkedIn profile](https://www.linkedin.com/in/kanakintama-steven-mbarushimana-9169b325a/), listed as Kanakintama Steven Mbarushimana. His Student Branches Coordinator Chair appointment was provided by the Rwanda SAC chair.
+
+Gentille’s current leadership portrait uses the colour speaker photograph from the [IEEE GRSS SYP Summit speakers page](https://grss-syp.com/speakers/), replacing the monochrome personal-site portrait.
+
+Stephen’s current leadership photo is [IEEE Rwanda’s IEEE MTTS_62 on Flickr](https://www.flickr.com/photos/ieeerwanda/55494401797/in/album-72177720335355846), supplied by the user to replace the LinkedIn portrait.
